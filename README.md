@@ -5,7 +5,7 @@ allows to easily use CodeJar in Angular projects.
 
 ## Demo
 
-Visit the demo page:
+Visit the demo page: https://julianpoemp.github.io/ngx-codejar/
 
 ## About CodeJar
 

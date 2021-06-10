@@ -16,10 +16,11 @@ import {CodeJarContainer} from './codejar.typings';
 @Component({
   selector: 'ngx-codejar',
   template: `
-    <div #editor class="editor" [ngClass]="{
+    <pre #editor class="editor" [ngClass]="{
             'hljs': highlighter === 'hljs',
+            'language-typescript': highlighter === 'prism',
             'ngx-codejar-editor': highlighter !== undefined
-         }"></div>`,
+         }"></pre>`,
   styles: [`
     :host {
       display: block;

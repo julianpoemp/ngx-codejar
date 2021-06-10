@@ -20,7 +20,7 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 
 ### Using CodeJar with highlight.js
 
-If you want to use codejar with highlight.js you should do the following steps:
+If you want to use codejar with [highlight.js](https://highlightjs.org/) you should do the following steps:
 
 1. Install highlight.js, codejar and ngx-codejar:
 
@@ -43,7 +43,38 @@ If you want to use codejar with highlight.js you should do the following steps:
 })
 ````
 
-3. Now see URL on how to use it.
+3. Select themes from `node_modules/highlight.js/styles` and add them to the script section of your `angular.json`.
+
+4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
+
+### Using CodeJar with prism.js
+
+If you want to use codejar with [prism.js](https://prismjs.com/) you should do the following steps:
+
+1. Install prism.js, codejar and ngx-codejar:
+
+  ````
+  npm install --save codejar prismjs ngx-codejar && npm install --save-dev @types/prismjs
+  ````
+
+2. Import module `NgxCodeJarModule` to your app's ngModule:
+
+````typescript
+@NgModule({
+  declarations: [
+    // ...
+  ],
+  imports: [
+    // ...
+    NgxCodejarModule
+  ],
+  // ...
+})
+````
+
+3. Select themes from `node_modules/prismjs/themes` and add them to the script section of your `angular.json`.
+
+4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
 
 ## Development
 

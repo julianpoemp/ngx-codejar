@@ -1,14 +1,23 @@
 <h1>ngx-codejar</h1>
 <p>
-  An Angular wrapper for CodeJar. It supports two-way data-binding.
+  An Angular wrapper for the code-editor CodeJar. It supports two-way data-binding.
 </p>
 
 <p>Below you see one example of how to use ngx-codejar. Each code block is an editor.</p>
 
-<h2>Example:</h2>
+<h2>Example with highlight.js:</h2>
 <h3>my-component.component.ts:</h3>
-<ngx-codejar [highlightMethod]="highlightWithTS" [(code)]="tsCode"></ngx-codejar>
+<ngx-codejar [highlightMethod]="highlightWithTS" [(code)]="hljsTSCode"></ngx-codejar>
 
 <h3>my-component.component.html</h3>
-<ngx-codejar [highlightMethod]="highlightWithHTML" [(code)]="htmlCode"></ngx-codejar>
+<ngx-codejar [highlightMethod]="highlightWithHTML" [(code)]="hljsHTMLCode"></ngx-codejar>
+<br/>
+
+<h2>Example with prism.js:</h2>
+<h3>my-component.component.ts:</h3>
+<ngx-codejar [highlightMethod]="hightlightTSWithPrismJS" [(code)]="prismTSCode" [highlighter]="'prism'"></ngx-codejar>
+
+<h3>my-component.component.html</h3>
+<ngx-codejar [highlightMethod]="hightlightHTMLWithPrismJS" [(code)]="prismHTMLCode"
+             [highlighter]="'prism'"></ngx-codejar>
 <br/>

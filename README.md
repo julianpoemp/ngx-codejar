@@ -1,3 +1,5 @@
+**STILL IN DEVELOPMENT**
+
 # ngx-codejar
 
 This is an Angular wrapper for the code-editor [CodeJar](https://github.com/antonmedv/codejar) by Anton Medvedev. It
@@ -43,7 +45,7 @@ If you want to use codejar with [highlight.js](https://highlightjs.org/) you sho
 })
 ````
 
-3. Select themes from `node_modules/highlight.js/styles` and add them to the script section of your `angular.json`.
+3. Select themes from `node_modules/highlight.js/styles` and add them to the styles section of your `angular.json`.
 
 4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
 
@@ -72,7 +74,7 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
 })
 ````
 
-3. Select themes from `node_modules/prismjs/themes` and add them to the script section of your `angular.json`.
+3. Select themes from `node_modules/prismjs/themes` and add them to the styles section of your `angular.json`.
 
 4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
 

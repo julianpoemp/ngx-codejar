@@ -1,11 +1,31 @@
 {
   "name": "ngx-codejar",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^12.0.3",
     "@angular/core": "^12.0.3"
   },
   "dependencies": {
     "tslib": "^2.1.0"
-  }
+  },
+  "description": "Angular wrapper for CodeJar supporting Prism.js and Highlight.js. With this you can easily add code-editors to your Angular app.",
+  "main": "esm2015/public-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianpoemp/ngx-codejar.git"
+  },
+  "keywords": [
+    "angular",
+    "codejar",
+    "code-editor"
+  ],
+  "author": "Julian Poemp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianpoemp/ngx-codejar/issues"
+  },
+  "homepage": "julianpoemp.github.io/ngx-codejar/"
 }

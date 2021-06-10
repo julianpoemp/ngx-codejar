@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:gh": "ng build --prod --base-href /ngx-codejar/"
+    "build:gh": "ng build --prod --base-href /ngx-codejar/ && rm -rf docs/* && cp -rf dist/demo/* docs/",
+    "publish:prepare": "ng build ngx-codejar && cp README.md dist/ngx-codejar/README.md && cd dist/ngx-codejar",
+    "publish:npm": "cd dist/ngx-codejar && npm publish"
   },
   "private": true,
   "dependencies": {

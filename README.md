@@ -1,3 +1,5 @@
+**STILL IN DEVELOPMENT**
+
 # ngx-codejar
 
 This is an Angular wrapper for the code-editor [CodeJar](https://github.com/antonmedv/codejar) by Anton Medvedev. It

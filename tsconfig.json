@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngrx-codejar": [
+        "dist/ngrx-codejar/ngrx-codejar",
+        "dist/ngrx-codejar"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

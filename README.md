@@ -1,27 +1,60 @@
-# Demo
+# ngx-codejar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
+This is an Angular wrapper for the code-editor [CodeJar](https://github.com/antonmedv/codejar) by Anton Medvedev. It
+allows to easily use CodeJar in Angular projects.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Visit the demo page:
 
-## Code scaffolding
+## About CodeJar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+According to the [main project](https://github.com/antonmedv/codejar) it has the following features:
 
-## Build
+- Preserves indentation on a new line
+- Adds closing brackets, quotes
+- Indents line with the Tab key
+- Supports undo/redo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+### Using CodeJar with highlight.js
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you want to use codejar with highlight.js you should do the following steps:
 
-## Running end-to-end tests
+1. Install highlight.js, codejar and ngx-codejar:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  ````
+  npm install --save codejar highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
+  ````
 
-## Further help
+2. Import module `NgxCodeJarModule` to your app's ngModule:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+````typescript
+@NgModule({
+  declarations: [
+    // ...
+  ],
+  imports: [
+    // ...
+    NgxCodejarModule
+  ],
+  // ...
+})
+````
+
+3. Now see URL on how to use it.
+
+## Development
+
+Call `npm start` to start the demo locally. Build the library using `ng build ngx-codejar`.
+
+## Contribution
+
+Feel free to create pull requests or issues with suggestions! :)
+
+## Troubleshooting
+
+This package is just an wrapper for CodeJar. If you have any problems using it please make sure, that the problem is
+related to this wrapper.
+

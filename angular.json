@@ -27,9 +27,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/highlight.js/styles/github-dark.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -97,6 +99,37 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "ngx-codejar": {
+      "projectType": "library",
+      "root": "projects/ngx-codejar",
+      "sourceRoot": "projects/ngx-codejar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-codejar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-codejar/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-codejar/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-codejar/src/test.ts",
+            "tsConfig": "projects/ngx-codejar/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-codejar/karma.conf.js"
           }
         }
       }

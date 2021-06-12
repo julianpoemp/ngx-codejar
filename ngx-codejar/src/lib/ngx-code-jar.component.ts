@@ -12,6 +12,7 @@ import {
 } from '@angular/core';
 import {CodeJar, Position} from 'codejar';
 import {CodeJarContainer} from './codejar.typings';
+import {withLineNumbers} from 'codejar/linenumbers.js';
 
 @Component({
   selector: 'ngx-codejar',
@@ -51,6 +52,7 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
   private codeJar: any;
 
   @Input() code = '';
+  @Input() showLineNumbers = false;
   @Output() codeChange = new EventEmitter<string>();
 
   @Input() highlighter: 'prism' | 'hljs' = 'hljs';
@@ -68,7 +70,10 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
 
   ngAfterViewInit() {
     if (this.editor !== undefined) {
-      this.codeJar = CodeJar(this.editor.nativeElement, this.highlightMethod, {tab: '\t'});
+
+      const highlightMethod = (this.showLineNumbers) ? withLineNumbers(this.highlightMethod) : this.highlightMethod;
+
+      this.codeJar = CodeJar(this.editor.nativeElement, highlightMethod, {tab: '\t'});
       this.codeJar.onUpdate((newCode: string) => {
         this.code = newCode;
         this.codeChange.emit(newCode);

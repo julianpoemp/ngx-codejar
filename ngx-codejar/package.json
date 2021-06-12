@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Angular wrapper for CodeJar supporting Prism.js and Highlight.js. With this you can easily add code-editors to your Angular app.",
   "peerDependencies": {
+    "codejar": "^3.4.0",
     "@angular/common": "^10.2.4",
     "@angular/core": "^10.2.4"
   },

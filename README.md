@@ -4,7 +4,7 @@ This is an Angular wrapper for the code-editor [CodeJar](https://github.com/anto
 allows to easily use CodeJar in Angular projects.
 
 <div align="center" style="max-width:100%;">
-<img src="https://raw.githubusercontent.com/julianpoemp/ngx-codejar" alt="thumbnail">
+<img src="https://raw.githubusercontent.com/julianpoemp/ngx-codejar/main/screenshots/thumbnail.png" alt="thumbnail">
 </div>
 
 ## Demo

@@ -3,6 +3,7 @@
 This is an Angular wrapper for the code-editor [CodeJar](https://github.com/antonmedv/codejar) by Anton Medvedev. It
 allows to easily use CodeJar in Angular projects.
 
+<!--suppress HtmlDeprecatedAttribute -->
 <div align="center" style="max-width:100%;">
 <img src="https://raw.githubusercontent.com/julianpoemp/ngx-codejar/main/screenshots/thumbnail.png" alt="thumbnail">
 </div>
@@ -24,15 +25,15 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 
 ### Using CodeJar with highlight.js
 
-If you want to use codejar with [highlight.js](https://highlightjs.org/) you should do the following steps:
+If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you should do the following steps:
 
-1. Install highlight.js, codejar and ngx-codejar:
+1. Install highlight.js, CodeJar and ngx-codejar:
 
   ````
   npm install --save codejar highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
   ````
 
-2. Import module `NgxCodeJarModule` to your app's ngModule:
+2. Import module `NgxCodejarModule` to your app's ngModule:
 
 ````typescript
 @NgModule({
@@ -40,7 +41,7 @@ If you want to use codejar with [highlight.js](https://highlightjs.org/) you sho
     // ...
   ],
   imports: [
-    // ...
+    // ...,
     NgxCodejarModule
   ],
   // ...
@@ -61,7 +62,7 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
   npm install --save codejar prismjs ngx-codejar && npm install --save-dev @types/prismjs
   ````
 
-2. Import module `NgxCodeJarModule` to your app's ngModule:
+2. Import module `NgxCodejarModule` to your app's ngModule:
 
 ````typescript
 @NgModule({
@@ -69,7 +70,7 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
     // ...
   ],
   imports: [
-    // ...
+    // ...,
     NgxCodejarModule
   ],
   // ...
@@ -135,6 +136,6 @@ Feel free to create pull requests or issues with suggestions! :)
 
 ## Troubleshooting
 
-This package is just an wrapper for CodeJar. If you have any problems using it please make sure, that the problem is
+This package is just a wrapper for CodeJar. If you have any problems using it please make sure, that the problem is
 related to this wrapper.
 

@@ -29,9 +29,8 @@ export class MyComponent {
   `;
 
 
-  hljsHTMLCode = `<ngx-codejar [highlightMethod]="highlightMethod" [(code)]="code"></ngx-codejar>`;
-
-  prismHTMLCode = `<ngx-codejar [highlightMethod]="highlightMethod" [(code)]="code" [highlighter]="'prism'"></ngx-codejar>`;
+  hljsHTMLCode = `<ngx-codejar [highlightMethod]="highlightMethod" [(code)]="code" [showLineNumbers]="true"></ngx-codejar>`;
+  prismHTMLCode = `<ngx-codejar [highlightMethod]="highlightMethod" [(code)]="code" [highlighter]="'prism'" [showLineNumbers]="true"></ngx-codejar>`;
 
   prismTSCode = `import * as Prism from 'prismjs';
 import "prismjs/components/prism-typescript";

@@ -1,4 +1,4 @@
-# ngx-codejar
+# ngx-codejar <a href="https://www.npmjs.com/package/ngx-codejar"><img alt="npm" src="https://img.shields.io/npm/v/ngx-codejar"></a>
 
 This is an Angular wrapper for the code-editor [CodeJar](https://github.com/antonmedv/codejar) by Anton Medvedev. It
 allows to easily use CodeJar in Angular projects.
@@ -14,6 +14,7 @@ Visit the demo page: https://julianpoemp.github.io/ngx-codejar/
 
 ## About CodeJar
 
+CodeJar is an embeddable javascript code-editor that supports different highlighter like Highlight.js or PrimsJs.
 According to the [main project](https://github.com/antonmedv/codejar) it has the following features:
 
 - Preserves indentation on a new line
@@ -23,7 +24,7 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 
 ## Installation
 
-### Using CodeJar with highlight.js
+### How to use CodeJar with Angular and highlight.js
 
 If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you should do the following steps:
 
@@ -52,7 +53,7 @@ If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you sho
 
 4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
 
-### Using CodeJar with prism.js
+### How to use CodeJar with Angular and Prism.js
 
 If you want to use codejar with [prism.js](https://prismjs.com/) you should do the following steps:
 

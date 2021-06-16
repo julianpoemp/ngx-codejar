@@ -80,6 +80,7 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
         this.update.emit(newCode);
       });
       this.updateCode(this.code);
+      this.update.emit(this.code);
     }
   }
 

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import hljs from 'highlight.js/es';
+import hljs from 'highlight.js';
 import * as Prism from 'prismjs';
 import 'prismjs/components/prism-typescript';
 import {CodeJarContainer} from '../../../ngx-codejar/src/lib/codejar.typings';

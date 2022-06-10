@@ -1,3 +1,10 @@
+## [5.0.0](https://github.com/julianpoemp/ngx-codejar/compare/v1.0.2...v5.0.0) (2022-06-10)
+
+### Enhancements
+
+* **codejar:** updated codejar to 3.6.0
+* **angular:** updated angular to 14.0.1
+
 ## [1.0.2](https://github.com/julianpoemp/ngx-codejar/compare/v1.0.1...v1.0.2) (2021-06-12)
 
 ### Features

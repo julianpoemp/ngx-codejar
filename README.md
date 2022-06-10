@@ -57,7 +57,7 @@ If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you sho
 
 If you want to use codejar with [prism.js](https://prismjs.com/) you should do the following steps:
 
-1. Install prism.js, codejar and ngx-codejar (**Important: you have to install CodeJar v3.4.0**): 
+1. Install prism.js, codejar and ngx-codejar:
 
   ````
   npm install --save codejar@3.4.0 prismjs ngx-codejar && npm install --save-dev @types/prismjs

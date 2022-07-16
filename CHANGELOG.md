@@ -1,3 +1,9 @@
+## [5.1.0](https://github.com/julianpoemp/ngx-codejar/compare/v5.0.1...v5.1.0) (2022-07-16)
+
+### Enhancements
+
+* **codejar:** fixed issue with selection on some browsers
+
 ## [5.0.1](https://github.com/julianpoemp/ngx-codejar/compare/v5.0.0...v5.0.1) (2022-07-16)
 
 ## [5.0.0](https://github.com/julianpoemp/ngx-codejar/compare/v1.0.2...v5.0.0) (2022-06-10)

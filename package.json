@@ -12,7 +12,7 @@
     "build:lib": "ng build ngx-codejar",
     "build:gh": "ng build demo -c production --base-href /ngx-codejar/ && rm -rf docs/* && cp -rf dist/demo/* docs/",
     "build:prod": "ng build ngx-codejar -c production && cp README.md dist/ngx-codejar/README.md && cp LICENSE dist/ngx-codejar/LICENSE && cd dist/ngx-codejar",
-    "changelog": "conventional-changelog -p angular -o CHANGELOG.md"
+    "changelog": "conventional-changelog -p angular -o CHANGELOG.md --verbose"
   },
   "private": true,
   "dependencies": {
@@ -39,7 +39,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
-    "conventional-changelog-cli": "^2.1.1",
+    "conventional-changelog-cli": "^2.2.2",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.3.20",

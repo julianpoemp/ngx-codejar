@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {NgxCodejarModule} from '../../../ngx-codejar/src/lib/ngx-codejar.module';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import {NgxCodejarModule} from '../../../ngx-codejar/src/lib/ngx-codejar.module'
   ],
   imports: [
     BrowserModule,
-    NgxCodejarModule
+    NgxCodejarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

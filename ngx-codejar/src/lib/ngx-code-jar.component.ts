@@ -1,15 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  EventEmitter,
-  Input,
-  OnChanges,
-  OnInit,
-  Output,
-  SimpleChanges,
-  ViewChild
-} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {CodeJar, Position} from 'codejar';
 import {CodeJarContainer} from './codejar.typings';
 import {withLineNumbers} from 'codejar/linenumbers.js';
@@ -42,14 +31,13 @@ import {withLineNumbers} from 'codejar/linenumbers.js';
     }
   `]
 })
-export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
-
+export class NgxCodeJarComponent implements OnInit, AfterViewInit {
   constructor() {
     this.update = new EventEmitter<string>();
   }
 
   @ViewChild('editor') editor: ElementRef | undefined;
-  private codeJar: any;
+  private codeJar: CodeJar;
 
   @Input() code = '';
   @Input() showLineNumbers = false;
@@ -84,22 +72,11 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
     }
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes.code !== undefined) {
-      this.code = changes.code.currentValue;
-      if (this.codeJar !== undefined) {
-        this.updateCode(this.code);
-      }
-    }
-  }
-
   /***
    * updates the code and preserves the position
    * @param newCode new code
    */
   public updateCode(newCode: string) {
-    const position = this.codeJar.save();
     this.codeJar.updateCode(newCode);
-    this.codeJar.restore(position);
   }
 }

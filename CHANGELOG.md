@@ -1,3 +1,9 @@
+## [5.1.1](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.0...v5.1.1) (2022-07-16)
+
+### Bugfixes
+
+* **codejar:** fixed issue with data binding not working
+
 ## [5.1.0](https://github.com/julianpoemp/ngx-codejar/compare/v5.0.1...v5.1.0) (2022-07-16)
 
 ### Enhancements

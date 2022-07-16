@@ -1,3 +1,7 @@
+## [5.1.2](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.1...v5.1.2) (2022-07-16)
+
+**codejar:** fixed losing selection in editor on data binding
+
 ## [5.1.1](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.0...v5.1.1) (2022-07-16)
 
 ### Bugfixes

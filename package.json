@@ -1,7 +1,7 @@
 {
   "name": "ngx-codejar",
   "description": "Angular wrapper for CodeJar supporting Prism.js and Highlight.js. With this you can easily add code-editors to your Angular app.",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve demo",
@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:lib": "ng build ngx-codejar",
-    "build:gh": "ng build demo --prod --base-href /ngx-codejar/ && rm -rf docs/* && cp -rf dist/demo/* docs/",
+    "build:gh": "ng build demo -c production --base-href /ngx-codejar/ && rm -rf docs/* && cp -rf dist/demo/* docs/",
     "build:prod": "ng build ngx-codejar -c production && cp README.md dist/ngx-codejar/README.md && cp LICENSE dist/ngx-codejar/LICENSE && cd dist/ngx-codejar",
     "changelog": "conventional-changelog -p angular -o CHANGELOG.md"
   },

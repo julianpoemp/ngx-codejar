@@ -1,3 +1,5 @@
+## [5.0.1](https://github.com/julianpoemp/ngx-codejar/compare/v5.0.0...v5.0.1) (2022-07-16)
+
 ## [5.0.0](https://github.com/julianpoemp/ngx-codejar/compare/v1.0.2...v5.0.0) (2022-06-10)
 
 ### Enhancements
@@ -11,6 +13,3 @@
 
 * **ngx-codejar:** added support for line
   numbers ([c4311c2](https://github.com/julianpoemp/ngx-codejar/commit/c4311c23397f042e1d347cc63c6a32a9dc9fb2cf))
-
-
-

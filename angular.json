@@ -3,34 +3,7 @@
   "version": 1,
   "newProjectRoot": ".",
   "projects": {
-    "ngx-codejar": {
-      "projectType": "library",
-      "root": "ngx-codejar",
-      "sourceRoot": "ngx-codejar/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "tsConfig": "ngx-codejar/tsconfig.lib.json",
-            "project": "ngx-codejar/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "ngx-codejar/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "ngx-codejar/src/test.ts",
-            "tsConfig": "ngx-codejar/tsconfig.spec.json",
-            "karmaConfig": "ngx-codejar/karma.conf.js"
-          }
-        }
-      }
-    },
+
     "demo": {
       "projectType": "application",
       "schematics": {},
@@ -46,7 +19,6 @@
             "main": "demo/src/main.ts",
             "polyfills": "demo/src/polyfills.ts",
             "tsConfig": "demo/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "demo/src/favicon.ico",
               "demo/src/assets"
@@ -56,7 +28,13 @@
               "node_modules/highlight.js/styles/github-dark.css",
               "demo/src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -132,6 +110,34 @@
             "production": {
               "devServerTarget": "demo:serve:production"
             }
+          }
+        }
+      }
+    },
+    "ngx-codejar": {
+      "projectType": "library",
+      "root": "ngx-codejar",
+      "sourceRoot": "ngx-codejar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "ngx-codejar/tsconfig.lib.json",
+            "project": "ngx-codejar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "ngx-codejar/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "ngx-codejar/src/test.ts",
+            "tsConfig": "ngx-codejar/tsconfig.spec.json",
+            "karmaConfig": "ngx-codejar/karma.conf.js"
           }
         }
       }

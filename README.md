@@ -22,6 +22,15 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 - Indents line with the Tab key
 - Supports undo/redo
 
+## Overview
+
+- [Install ngx-codejar with highlight.js](https://github.com/julianpoemp/ngx-codejar#how-to-use-codejar-with-angular-and-highlightjs)
+- [Install ngx-codejar with prism.js](https://github.com/julianpoemp/ngx-codejar#how-to-use-codejar-with-angular-and-prismjs)
+- [Options](https://github.com/julianpoemp/ngx-codejar#properties--events)
+- [Development](https://github.com/julianpoemp/ngx-codejar#development)
+- [Contribution](https://github.com/julianpoemp/ngx-codejar#development)
+- [Troubleshooting](https://github.com/julianpoemp/ngx-codejar#development)
+
 ## Installation
 
 ### How to use CodeJar with Angular and highlight.js

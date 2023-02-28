@@ -1,8 +1,16 @@
+## [5.1.4](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.3...v5.1.4) (2023-02-28)
+
+### Bug Fixes
+
+* **npm:** codejar fixes redo/undo issue since
+  3.7.0 ([a8bc8cc](https://github.com/julianpoemp/ngx-codejar/commit/a8bc8ccc7140acdf282b77d0852852916ca17f7e))
+
 ## [5.1.3](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.2...v5.1.3) (2023-02-12)
 
 ### Bug Fixes
 
-* **ngx-codejar:** redo/undo not working ref [#1](https://github.com/julianpoemp/ngx-codejar/issues/1) ([c3df763](https://github.com/julianpoemp/ngx-codejar/commit/c3df7630c0f5628528ad3407da53b4030dac5b47))
+* **ngx-codejar:** redo/undo not working
+  ref [#1](https://github.com/julianpoemp/ngx-codejar/issues/1) ([c3df763](https://github.com/julianpoemp/ngx-codejar/commit/c3df7630c0f5628528ad3407da53b4030dac5b47))
 
 ## [5.1.2](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.1...v5.1.2) (2022-07-16)
 

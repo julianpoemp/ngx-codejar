@@ -39,7 +39,7 @@ If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you sho
 1. Install highlight.js, CodeJar and ngx-codejar:
 
   ````
-  npm install --save julianpoemp/codejar-fixed-redo-undo highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
+  npm install --save codejar highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
   ````
 
 2. Import module `NgxCodejarModule` to your app's ngModule:
@@ -68,7 +68,7 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
 1. Install prism.js, codejar and ngx-codejar:
 
   ````
-  npm install --save julianpoemp/codejar-fixed-redo-undo prismjs ngx-codejar && npm install --save-dev @types/prismjs
+  npm install --save codejar prismjs ngx-codejar && npm install --save-dev @types/prismjs
   ````
 
 2. Import module `NgxCodejarModule` to your app's ngModule:

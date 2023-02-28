@@ -24,14 +24,6 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 
 ## Installation
 
-#### Notice
-
-Currently the redo/undo feature from CodeJar is not working (see [Issue #1](https://github.com/julianpoemp/ngx-codejar/issues/1)). Because of that I uploaded a fix to a new repository that you can install easily:
-
-```` 
-npm install --save julianpoemp/codejar-fixed-redo-undo --legacy-peer-deps
-````
-
 ### How to use CodeJar with Angular and highlight.js
 
 If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you should do the following steps:

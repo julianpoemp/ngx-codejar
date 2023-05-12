@@ -1,3 +1,10 @@
+## [5.1.5](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.4...v5.1.5) (2023-05-12)
+
+* README and github page updates.
+
+**! NOTICE:** If exists, remove julianpoemp/codejar-fixed-redo-undo and use >= codejar@3.7.0 . The undo/redo issue is
+now fixed in the official package.
+
 ## [5.1.4](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.3...v5.1.4) (2023-02-28)
 
 ### Bug Fixes

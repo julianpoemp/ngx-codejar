@@ -1,3 +1,10 @@
+## [5.1.6](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.5...v5.1.6) (2023-06-26)
+
+
+### Features
+
+* **editor:** support for setting height and flex to ngx-codejar ([8653204](https://github.com/julianpoemp/ngx-codejar/commit/8653204a175dc95d7aeb0c3369b556ea234676d9))
+
 ## [5.1.5](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.4...v5.1.5) (2023-05-12)
 
 * README and github page updates.

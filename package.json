@@ -1,7 +1,7 @@
 {
   "name": "ngx-codejar",
   "description": "Angular wrapper for CodeJar supporting Prism.js and Highlight.js. With this you can easily add code-editors to your Angular app.",
-  "version": "5.1.5",
+  "version": "5.1.6",
   "scripts": {
     "ng": "ng",
     "start": "ng serve demo",

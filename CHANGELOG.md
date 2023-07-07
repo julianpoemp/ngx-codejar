@@ -1,3 +1,18 @@
+# [5.2.0](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.6...v5.2.0) (2023-07-07)
+
+
+### Features
+
+* **ngx-codejar:** add all API functions provided by CodeJar ([3a5b29f](https://github.com/julianpoemp/ngx-codejar/commit/3a5b29fd7f9826fd24429c492c21604d3d90d786))
+* **ngx-codejar:** add options provided by CodeJar ([03379ac](https://github.com/julianpoemp/ngx-codejar/commit/03379acf728d61e8303ff60476a06b2b23ced714))
+* **ngx-codejar:** introducing standalone component ([e82f9fd](https://github.com/julianpoemp/ngx-codejar/commit/e82f9fd1b59745771e8405ea31fe7ecf96b0366e))
+
+
+### BREAKING CHANGES
+
+* **ngx-codejar:** NgxCodeJarComponent is now a standalone component. Have
+  a look on the README for more information
+
 ## [5.1.6](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.5...v5.1.6) (2023-06-26)
 
 

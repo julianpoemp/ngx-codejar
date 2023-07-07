@@ -15,8 +15,11 @@ import {
 import {CodeJar, Position} from 'codejar';
 import {CodeJarContainer, CodeJarOptions} from './codejar.typings';
 import {withLineNumbers} from 'codejar/linenumbers.js';
+import {CommonModule} from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'ngx-codejar',
   template: `
     <div class="ngx-codejar-wrap ngx-codejar-flex" #wrapper>

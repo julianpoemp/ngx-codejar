@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "ngxCodejarNew",
+            "prefix": "ngxCodejar",
             "style": "camelCase"
           }
         ],
@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "ngx-codejar-new",
+            "prefix": "ngx-codejar",
             "style": "kebab-case"
           }
         ]

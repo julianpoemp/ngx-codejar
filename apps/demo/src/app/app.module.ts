@@ -2,8 +2,8 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {NgxCodejarModule} from 'ngx-codejar';
-import {FormsModule} from "@angular/forms";
+import {NgxCodeJarComponent} from 'ngx-codejar';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,10 +11,11 @@ import {FormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
-    NgxCodejarModule,
+    NgxCodeJarComponent,
     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

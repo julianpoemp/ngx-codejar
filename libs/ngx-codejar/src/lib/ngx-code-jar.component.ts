@@ -4,13 +4,15 @@ import {
   ElementRef,
   EventEmitter,
   Input,
+  OnChanges,
   OnInit,
   Output,
   Renderer2,
+  SimpleChanges,
   ViewChild
 } from '@angular/core';
 import {CodeJar, Position} from 'codejar';
-import {CodeJarContainer} from './codejar.typings';
+import {CodeJarContainer, CodeJarOptions} from './codejar.typings';
 import {withLineNumbers} from 'codejar/linenumbers.js';
 
 @Component({
@@ -55,7 +57,7 @@ import {withLineNumbers} from 'codejar/linenumbers.js';
     }
   `]
 })
-export class NgxCodeJarComponent implements OnInit, AfterViewInit {
+export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
   constructor(private el: ElementRef, private renderer: Renderer2) {
     this.update = new EventEmitter<string>();
   }
@@ -79,6 +81,7 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit {
   @Output() codeChange = new EventEmitter<string>();
 
   @Input() highlighter: 'prism' | 'hljs' = 'hljs';
+  @Input() options: CodeJarOptions = {};
 
   // Events
   /**
@@ -88,15 +91,30 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit {
   @Input() highlightMethod: (editor: CodeJarContainer, pos?: Position) => void = () => {
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['options']?.currentValue && changes['options'].currentValue !== changes['options']) {
+      if (this.codeJar) {
+        this.codeJar.updateOptions(changes['options']?.currentValue);
+        this.applyAdditionalOptions();
+      }
+    }
+  }
+
   ngOnInit(): void {
   }
 
   ngAfterViewInit() {
+    this.int();
+  }
+
+  private int() {
     if (this.editor !== undefined) {
       const highlightMethod = (this.showLineNumbers) ? withLineNumbers(this.highlightMethod) : this.highlightMethod;
 
-      this.codeJar = CodeJar(this.editor.nativeElement, highlightMethod, {tab: '\t'});
+      this.codeJar = CodeJar(this.editor.nativeElement, highlightMethod, this.options);
       this.applyCustomizations();
+      this.applyAdditionalOptions();
+
       this.codeJar.onUpdate((newCode: string) => {
         this._code = newCode;
         this.codeChange.emit(newCode);
@@ -104,6 +122,14 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit {
       });
       this.updateCode(this._code);
       this.update.emit(this._code);
+    }
+  }
+
+  applyAdditionalOptions() {
+    if (this.editor) {
+      if (this.options.tabSize) {
+        this.renderer.setStyle(this.editor.nativeElement, 'tab-size', this.options.tabSize);
+      }
     }
   }
 

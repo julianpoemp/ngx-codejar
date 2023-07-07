@@ -105,21 +105,27 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
 <tbody>
 <tr>
 <td>Property</td>
+<td>code</td>
+<td>property for two-way data-binding.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Property</td>
 <td>highlighter</td>
 <td>selects which highlighter should be used ('prism' or 'hljs')</td>
 <td>'hljs'</td>
 </tr>
 <tr>
 <td>Property</td>
-<td>showLineNumbers</td>
-<td>adds line numbers</td>
-<td>false</td>
+<td>options</td>
+<td>Options provided by CodeJar + additional Options (tabSize)</td>
+<td>Defaults provided by Codejar <a href="https://github.com/antonmedv/codejar">Defaults by CodeJar</a></td>
 </tr>
 <tr>
 <td>Property</td>
-<td>code</td>
-<td>property for two-way data-binding.</td>
-<td>-</td>
+<td>showLineNumbers</td>
+<td>adds line numbers</td>
+<td>false</td>
 </tr>
 <tr>
 <td>Property</td>

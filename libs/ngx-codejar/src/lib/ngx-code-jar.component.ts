@@ -5,6 +5,7 @@ import {
   EventEmitter,
   Input,
   OnChanges,
+  OnDestroy,
   OnInit,
   Output,
   Renderer2,
@@ -57,7 +58,7 @@ import {withLineNumbers} from 'codejar/linenumbers.js';
     }
   `]
 })
-export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
+export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
   constructor(private el: ElementRef, private renderer: Renderer2) {
     this.update = new EventEmitter<string>();
   }
@@ -141,6 +142,59 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges {
     if (this.codeJar) {
       this.codeJar.updateCode(newCode);
     }
+  }
+
+  /***
+   * updates the options.
+   * @param options new options
+   */
+  public updateOptions(options: CodeJarOptions) {
+    if (this.codeJar) {
+      this.options = options;
+      this.codeJar.updateOptions(options);
+    }
+  }
+
+  /***
+   * saves current cursor position.
+   */
+  public save(): Position | undefined {
+    if (this.codeJar) {
+      return this.codeJar.save();
+    }
+    return undefined;
+  }
+
+  /***
+   * restore cursor position.
+   * @param pos cursor position
+   */
+  public restore(pos: Position): void {
+    if (this.codeJar) {
+      this.codeJar.restore(pos);
+    }
+  }
+
+  /***
+   * saves current editor state to history.
+   */
+  public recordHistory(pos: Position): void {
+    if (this.codeJar) {
+      this.codeJar.recordHistory();
+    }
+  }
+
+  /***
+   * removes all event listeners. It's automatically called when component is destroyed.
+   */
+  public destroy(): void {
+    if (this.codeJar) {
+      this.codeJar.destroy();
+    }
+  }
+
+  ngOnDestroy() {
+    this.destroy();
   }
 
   private applyCustomizations() {

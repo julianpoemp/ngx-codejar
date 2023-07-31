@@ -14,7 +14,7 @@ import {
 } from '@angular/core';
 import {CodeJar, Position} from 'codejar';
 import {CodeJarContainer, CodeJarOptions} from './codejar.typings';
-import {withLineNumbers} from 'codejar/linenumbers.js';
+import {withLineNumbers} from 'codejar-linenumbers';
 import {CommonModule} from '@angular/common';
 
 @Component({

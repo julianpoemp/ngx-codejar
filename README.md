@@ -37,10 +37,10 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 
 If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you should do the following steps:
 
-1. Install highlight.js, CodeJar and ngx-codejar:
+1. Install highlight.js, CodeJar, codejar-linenumbers and ngx-codejar:
 
   ````
-  npm install --save codejar highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
+  npm install --save codejar codejar-linenumbers highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
   ````
 
 2. Import NgxCodeJarComponent `NgxCodeJarComponent` to your app's ngModule import property (standalone!):
@@ -59,20 +59,20 @@ If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you sho
 ````
 
 3. Select themes from `node_modules/highlight.js/styles` and add them to the styles section of your `angular.json`.
-
-4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
+4. Add `node_modules/codejar-linenumbers/es/codejar-linenumbers.css` to the styles section of your `angular.json`
+5. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
 
 ### How to use CodeJar with Angular and Prism.js
 
 If you want to use codejar with [prism.js](https://prismjs.com/) you should do the following steps:
 
-1. Install prism.js, codejar and ngx-codejar:
+1. Install prism.js, codejar, codejar-linenumbers and ngx-codejar:
 
   ````
-  npm install --save codejar prismjs ngx-codejar && npm install --save-dev @types/prismjs
+  npm install --save codejar codejar-linenumbers prismjs ngx-codejar && npm install --save-dev @types/prismjs
   ````
 
-2. Import module `NgxCodejarModuleNgxCodeJarComponent` to your app's ngModule imports property (!standalone):
+2. Import module `NgxCodeJarComponent` to your app's ngModule imports property (!standalone):
 
 ````typescript
 @NgModule({
@@ -88,8 +88,8 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
 ````
 
 3. Select themes from `node_modules/prismjs/themes` and add them to the styles section of your `angular.json`.
-
-4. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
+4. Add `node_modules/codejar-linenumbers/es/codejar-linenumbers.css` to the styles section of your `angular.json`
+5. Now see https://julianpoemp.github.io/ngx-codejar/ on how to use it.
 
 ### Properties & Events
 

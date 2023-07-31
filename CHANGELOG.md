@@ -1,3 +1,20 @@
+# [6.0.0](https://github.com/julianpoemp/ngx-codejar/compare/v5.2.0...v6.0.0) (2023-07-31)
+
+
+### Bug Fixes
+
+* **ngx-codejar:** line numbers not working with CodeJar >= 4 ([aef65c3](https://github.com/julianpoemp/ngx-codejar/commit/aef65c3ea8c5814188cbf3a88486fadada81d0ce)), closes [#2](https://github.com/julianpoemp/ngx-codejar/issues/2)
+
+
+### BREAKING CHANGES
+
+- Linenumbers feature was dropped in main CodeJar repository since v4.
+  You
+  have to install package codejar-linenumbers instead. <b>! changed installation instructions ! </b>
+- minimum
+  CodeJar version is 4 about now.
+
+
 # [5.2.0](https://github.com/julianpoemp/ngx-codejar/compare/v5.1.6...v5.2.0) (2023-07-07)
 
 

@@ -61,7 +61,7 @@ import {CommonModule} from '@angular/common';
     }
   `]
 })
-export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
+export class NgxCodeJarComponent implements AfterViewInit, OnChanges, OnDestroy {
   constructor(private el: ElementRef, private renderer: Renderer2) {
     this.update = new EventEmitter<string>();
   }
@@ -86,6 +86,7 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges, On
 
   @Input() highlighter: 'prism' | 'hljs' = 'hljs';
   @Input() options: CodeJarOptions = {};
+  @Input() readonly = false;
 
   // Events
   /**
@@ -100,18 +101,30 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges, On
       if (this.codeJar) {
         this.codeJar.updateOptions(changes['options']?.currentValue);
         this.applyAdditionalOptions();
+        this.checkReadonly();
+      }
+    }
+
+    if (changes['readonly']) {
+      this.checkReadonly();
+    }
+  }
+
+  private checkReadonly() {
+    if (this.editor?.nativeElement) {
+      if (this.readonly) {
+        this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'none');
+      } else {
+        this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'plaintext-only');
       }
     }
   }
 
-  ngOnInit(): void {
-  }
-
   ngAfterViewInit() {
-    this.int();
+    this.init();
   }
 
-  private int() {
+  private init() {
     if (this.editor !== undefined) {
       const highlightMethod = (this.showLineNumbers) ? withLineNumbers(this.highlightMethod) : this.highlightMethod;
 
@@ -126,6 +139,8 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges, On
       });
       this.updateCode(this._code);
       this.update.emit(this._code);
+      this.editor.nativeElement.addEventListener('keydown', this.onKeyDown);
+      this.checkReadonly();
     }
   }
 
@@ -210,6 +225,13 @@ export class NgxCodeJarComponent implements OnInit, AfterViewInit, OnChanges, On
       if (this.el.nativeElement.style.height !== '') {
         this.renderer.setStyle(lineNumbers, 'height', '100%');
       }
+    }
+  }
+
+  onKeyDown = (event: KeyboardEvent) => {
+    if (this.readonly) {
+      event.stopPropagation();
+      event.preventDefault();
     }
   }
 }

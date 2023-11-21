@@ -134,6 +134,12 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
 <td><code>(editor: CodeJarContainer) => {}</code></td>
 </tr>
 <tr>
+<td>Property</td>
+<td>readonly</td>
+<td>defines if user is allowed to make code changes</td>
+<td>false</td>
+</tr>
+<tr>
 <td>Event</td>
 <td>update</td>
 <td>this event is triggered after the code was updated.</td>

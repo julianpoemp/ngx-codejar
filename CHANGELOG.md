@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/julianpoemp/ngx-codejar/compare/v6.0.0...v6.1.0) (2023-11-21)
+
+
+### Features
+
+* **ngx-codejar:** readonly property ([d908e52](https://github.com/julianpoemp/ngx-codejar/commit/d908e52a994b45dd431ee53f34a6b8a0815e9269))
+
 # [6.0.0](https://github.com/julianpoemp/ngx-codejar/compare/v5.2.0...v6.0.0) (2023-07-31)
 
 

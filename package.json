@@ -1,13 +1,13 @@
 {
   "name": "ngx-codejar",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "license": "MIT",
   "scripts": {
     "start": "nx serve demo",
     "build:lib": "nx build ngx-codejar",
     "build:gh": "nx build demo -c production --base-href /ngx-codejar/ && rm -rf docs/* && cp -rf dist/apps/demo/* docs/",
     "build:prod": "nx build ngx-codejar -c production && cp README.md dist/libs/ngx-codejar/README.md && cp LICENSE dist/libs/ngx-codejar/LICENSE",
-    "changelog": "conventional-changelog -p angular -o CHANGELOG.md --verbose"
+    "changelog": "conventional-changelog --append -p angular -o CHANGELOG.md"
   },
   "private": true,
   "dependencies": {
@@ -51,7 +51,7 @@
     "@types/prismjs": "^1.26.0",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
-    "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-cli": "^4.1.0",
     "cypress": "^12.2.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",

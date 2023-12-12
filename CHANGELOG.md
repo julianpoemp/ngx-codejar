@@ -1,3 +1,10 @@
+## [6.1.1](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.0...v6.1.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* **ngx-codejar:** cannot set style of undefined ([f8facb7](https://github.com/julianpoemp/ngx-codejar/commit/f8facb75e1a3a251040fb94290d5c682af19b44d))
+
 # [6.1.0](https://github.com/julianpoemp/ngx-codejar/compare/v6.0.0...v6.1.0) (2023-11-21)
 
 

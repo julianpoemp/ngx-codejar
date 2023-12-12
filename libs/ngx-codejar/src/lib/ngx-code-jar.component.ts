@@ -6,7 +6,6 @@ import {
   Input,
   OnChanges,
   OnDestroy,
-  OnInit,
   Output,
   Renderer2,
   SimpleChanges,
@@ -22,14 +21,14 @@ import {CommonModule} from '@angular/common';
   imports: [CommonModule],
   selector: 'ngx-codejar',
   template: `
-    <div class="ngx-codejar-wrap ngx-codejar-flex" #wrapper>
+      <div class="ngx-codejar-wrap ngx-codejar-flex" #wrapper>
         <pre #editor class="editor" [ngClass]="{
                 'hljs': highlighter === 'hljs',
                 'language-typescript': highlighter === 'prism',
                 'ngx-codejar-editor': highlighter !== undefined
              }" style="padding-bottom:0px;">
         </pre>
-    </div>`,
+      </div>`,
   styles: [`
     :host {
       display: block;
@@ -216,14 +215,18 @@ export class NgxCodeJarComponent implements AfterViewInit, OnChanges, OnDestroy 
   }
 
   private applyCustomizations() {
-    if (this.wrapper && this.editor) {
+    if (this.wrapper && this.editor && this.el?.nativeElement) {
       const codejarWrap = (this.wrapper.nativeElement as HTMLElement).firstElementChild;
       const lineNumbers = this.el.nativeElement.getElementsByClassName('codejar-linenumbers')[0];
 
-      this.renderer.setStyle(codejarWrap, 'height', '100%');
+      if (codejarWrap) {
+        this.renderer.setStyle(codejarWrap, 'height', '100%');
+      }
 
-      if (this.el.nativeElement.style.height !== '') {
-        this.renderer.setStyle(lineNumbers, 'height', '100%');
+      if (lineNumbers) {
+        if (this.el.nativeElement.style?.height) {
+          this.renderer.setStyle(lineNumbers, 'height', '100%');
+        }
       }
     }
   }

@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~15.2.0",
     "@angular/router": "~15.2.0",
     "@nrwl/angular": "15.9.4",
+    "bootstrap-icons": "^1.11.3",
     "codejar": "^4.1.1",
     "codejar-linenumbers": "^1.0.0",
     "highlight.js": "^11.5.1",

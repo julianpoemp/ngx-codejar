@@ -1,3 +1,11 @@
+## [6.1.2](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.1...v6.1.2) (2024-02-24)
+
+
+### Bug Fixes
+
+* **ngx-codejar:** turning off readonly not working on FIrefox ([d47c716](https://github.com/julianpoemp/ngx-codejar/commit/d47c7169aea0e4153898ee167e034607f7a9d78b))
+
+
 ## [6.1.1](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.0...v6.1.1) (2023-12-12)
 
 

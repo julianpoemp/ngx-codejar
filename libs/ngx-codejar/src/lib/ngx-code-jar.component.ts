@@ -21,14 +21,14 @@ import {CommonModule} from '@angular/common';
   imports: [CommonModule],
   selector: 'ngx-codejar',
   template: `
-      <div class="ngx-codejar-wrap ngx-codejar-flex" #wrapper>
+    <div class="ngx-codejar-wrap ngx-codejar-flex" #wrapper>
         <pre #editor class="editor" [ngClass]="{
                 'hljs': highlighter === 'hljs',
                 'language-typescript': highlighter === 'prism',
                 'ngx-codejar-editor': highlighter !== undefined
              }" style="padding-bottom:0px;">
         </pre>
-      </div>`,
+    </div>`,
   styles: [`
     :host {
       display: block;
@@ -114,7 +114,7 @@ export class NgxCodeJarComponent implements AfterViewInit, OnChanges, OnDestroy 
       if (this.readonly) {
         this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'none');
       } else {
-        this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'plaintext-only');
+        this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'true');
       }
     }
   }

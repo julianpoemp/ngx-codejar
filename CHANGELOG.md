@@ -1,3 +1,12 @@
+## [6.1.3](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.2...v6.1.3) (2024-03-08)
+
+
+### Bug Fixes
+
+* **ngx-codejar:** removed linebreaks/tabs after enter key pressed ref [#3](https://github.com/julianpoemp/ngx-codejar/issues/3) ([41c2576](https://github.com/julianpoemp/ngx-codejar/commit/41c2576e6651ece088f617b599cc6914b013bc99))
+
+Please update your CodeJar dependency to ^v4.2.0.
+
 ## [6.1.2](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.1...v6.1.2) (2024-02-24)
 
 

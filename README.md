@@ -1,4 +1,4 @@
-# ngx-codejar <a href="https://www.npmjs.com/package/ngx-codejar"><img alt="npm" src="https://img.shields.io/npm/v/ngx-codejar"></a>
+# ngx-codejar v6.x
 
 This is an Angular wrapper for the code-editor [CodeJar](https://github.com/antonmedv/codejar) by Anton Medvedev. It
 allows to easily use CodeJar in Angular projects.
@@ -22,6 +22,38 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 - Indents line with the Tab key
 - Supports undo/redo
 
+
+## Compatibility
+
+<table>
+<thead>
+<tr>
+  <th>NgxCodeJar</th>
+  <th>CodeJar</th>
+  <th>Angular</th>
+  <th>Readme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.x</td>
+<td>4.x</td>
+<td> &gt;= 16</td>
+<td>
+  <a href="https://github.com/julianpoemp/ngx-codejar/blob/main/README.md">README</a>
+</td>
+</tr>
+<tr>
+<td>6.x</td>
+<td>4.x</td>
+<td>15.x</td>
+<td>
+  <a href="https://github.com/julianpoemp/ngx-codejar/blob/v6.x/README.md">README</a>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## Overview
 
 - [Install ngx-codejar with highlight.js](https://github.com/julianpoemp/ngx-codejar#how-to-use-codejar-with-angular-and-highlightjs)
@@ -40,7 +72,7 @@ If you want to use CodeJar with [highlight.js](https://highlightjs.org/) you sho
 1. Install highlight.js, CodeJar, codejar-linenumbers and ngx-codejar:
 
   ````
-  npm install --save codejar codejar-linenumbers highlight.js ngx-codejar && npm install --save-dev @types/highlight.js
+  npm install --save codejar codejar-linenumbers highlight.js ngx-codejar@6 && npm install --save-dev @types/highlight.js
   ````
 
 2. Import NgxCodeJarComponent `NgxCodeJarComponent` to your app's ngModule import property (standalone!):
@@ -69,7 +101,7 @@ If you want to use codejar with [prism.js](https://prismjs.com/) you should do t
 1. Install prism.js, codejar, codejar-linenumbers and ngx-codejar:
 
   ````
-  npm install --save codejar codejar-linenumbers prismjs ngx-codejar && npm install --save-dev @types/prismjs
+  npm install --save codejar codejar-linenumbers prismjs ngx-codejar@6 && npm install --save-dev @types/prismjs
   ````
 
 2. Import module `NgxCodeJarComponent` to your app's ngModule imports property (!standalone):

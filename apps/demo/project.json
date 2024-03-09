@@ -2,23 +2,32 @@
   "name": "demo",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "ngx-codejar-new",
+  "prefix": "ngx-codejar",
   "sourceRoot": "apps/demo/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/demo",
         "index": "apps/demo/src/index.html",
         "main": "apps/demo/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/demo/tsconfig.app.json",
-        "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
-        "styles": ["node_modules/highlight.js/styles/github-dark.css",
-          "node_modules/prismjs/themes/prism-dark.css","apps/demo/src/styles.scss",
-          "node_modules/codejar-linenumbers/es/codejar-linenumbers.css"
+        "assets": [
+          "apps/demo/src/favicon.ico",
+          "apps/demo/src/assets"
+        ],
+        "styles": [
+          "node_modules/highlight.js/styles/github-dark.css",
+          "node_modules/prismjs/themes/prism-dark.css",
+          "node_modules/codejar-linenumbers/es/codejar-linenumbers.css",
+          "apps/demo/src/styles.scss"
         ],
         "scripts": []
       },
@@ -28,7 +37,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "2mb"
+              "maximumError": "1mb"
             },
             {
               "type": "anyComponentStyle",
@@ -68,15 +77,22 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/demo/**/*.ts", "apps/demo/**/*.html"]
+        "lintFilePatterns": [
+          "apps/demo/**/*.ts",
+          "apps/demo/**/*.html"
+        ]
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/demo/jest.config.ts",
         "passWithNoTests": true
@@ -86,12 +102,6 @@
           "ci": true,
           "codeCoverage": true
         }
-      }
-    },
-    "serve-static": {
-      "executor": "@nrwl/web:file-server",
-      "options": {
-        "buildTarget": "demo:build"
       }
     }
   }

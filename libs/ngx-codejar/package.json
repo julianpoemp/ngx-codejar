@@ -9,12 +9,9 @@
     "@angular/core": ">= 14.0.0"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   },
-  "main": "esm2015/public-api.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/julianpoemp/ngx-codejar.git"

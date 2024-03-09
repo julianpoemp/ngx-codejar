@@ -2,12 +2,14 @@ import {Component} from '@angular/core';
 import hljs from 'highlight.js';
 import * as Prism from 'prismjs';
 import 'prismjs/components/prism-typescript';
-import {CodeJarContainer} from 'ngx-codejar';
+import {CodeJarContainer, NgxCodeJarComponent} from 'ngx-codejar';
 
 @Component({
-  selector: 'app-root',
+  standalone: true,
+  imports: [NgxCodeJarComponent],
+  selector: 'ngx-codejar-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'demo';

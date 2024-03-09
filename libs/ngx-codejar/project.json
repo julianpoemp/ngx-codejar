@@ -2,12 +2,12 @@
   "name": "ngx-codejar",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ngx-codejar/src",
-  "prefix": "ngx-codejar-new",
+  "prefix": "lib",
   "tags": [],
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:package",
+      "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
         "project": "libs/ngx-codejar/ng-package.json"
@@ -23,7 +23,7 @@
       "defaultConfiguration": "production"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "libs/ngx-codejar/jest.config.ts",
@@ -37,12 +37,13 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
           "libs/ngx-codejar/**/*.ts",
-          "libs/ngx-codejar/**/*.html"
+          "libs/ngx-codejar/**/*.html",
+          "libs/ngx-codejar/package.json"
         ]
       }
     }

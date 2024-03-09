@@ -22,6 +22,37 @@ According to the [main project](https://github.com/antonmedv/codejar) it has the
 - Indents line with the Tab key
 - Supports undo/redo
 
+## Compatibility
+
+<table>
+<thead>
+<tr>
+  <th>NgxCodeJar</th>
+  <th>CodeJar</th>
+  <th>Angular</th>
+  <th>Readme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.x</td>
+<td>4.x</td>
+<td> &gt;= 16</td>
+<td>
+  <a href="https://github.com/julianpoemp/ngx-codejar/blob/main/README.md">README</a>
+</td>
+</tr>
+<tr>
+<td>6.x</td>
+<td>4.x</td>
+<td>15.x</td>
+<td>
+  <a href="https://github.com/julianpoemp/ngx-codejar/blob/v6.x/README.md">README</a>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## Overview
 
 - [Install ngx-codejar with highlight.js](https://github.com/julianpoemp/ngx-codejar#how-to-use-codejar-with-angular-and-highlightjs)

@@ -114,7 +114,7 @@ export class NgxCodeJarComponent implements AfterViewInit, OnChanges, OnDestroy 
       if (this.readonly) {
         this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'none');
       } else {
-        this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'true');
+        this.renderer.setAttribute(this.editor?.nativeElement, 'contenteditable', 'plaintext-only');
       }
     }
   }

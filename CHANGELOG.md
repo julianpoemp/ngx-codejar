@@ -1,3 +1,9 @@
+## [6.1.4](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.3...v6.1.4) (2024-03-09)
+
+### Bug Fixes
+
+* **ngx-codejar:** newlines not working ref [#3](https://github.com/julianpoemp/ngx-codejar/issues/3) ([82cfa4d](https://github.com/julianpoemp/ngx-codejar/commit/82cfa4d8062e282e8975cf47f3d12101b8b0a0b1))
+
 ## [6.1.3](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.2...v6.1.3) (2024-03-08)
 
 

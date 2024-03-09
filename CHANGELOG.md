@@ -1,3 +1,15 @@
+## [7.0.0](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.3...v7.0.0) (2024-03-09)
+
+
+### chore
+
+* **ngx-codejar:** bump v7.0.0 ([975bf0e](https://github.com/julianpoemp/ngx-codejar/commit/975bf0e4447c8c4c1c7d0517be8ebfe3e57f4834))
+
+
+### BREAKING CHANGES
+
+* **ngx-codejar:** Angular requirements is now >= 16
+
 ## [6.1.3](https://github.com/julianpoemp/ngx-codejar/compare/v6.1.2...v6.1.3) (2024-03-08)
 
 

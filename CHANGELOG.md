@@ -1,3 +1,10 @@
+## [7.0.3](https://github.com/julianpoemp/ngx-codejar/compare/v7.0.2...v7.0.3) (2024-04-09)
+
+
+### Bug Fixes
+
+* **ngx-codejar:** can't change code on firefox ([96996c7](https://github.com/julianpoemp/ngx-codejar/commit/96996c7c672194d8299334fdcdf0caf1e2802130))
+
 ## [7.0.1](https://github.com/julianpoemp/ngx-codejar/compare/v7.0.0...v7.0.1) (2024-03-09)
 
 
